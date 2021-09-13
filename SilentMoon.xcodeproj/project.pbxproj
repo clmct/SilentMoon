@@ -14,6 +14,8 @@
 		B2AF835526EC69DC0039C6B2 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF835426EC69DC0039C6B2 /* OnboardingViewController.swift */; };
 		B2AF835A26EC69DE0039C6B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2AF835926EC69DE0039C6B2 /* Assets.xcassets */; };
 		B2AF835D26EC69DE0039C6B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2AF835B26EC69DE0039C6B2 /* LaunchScreen.storyboard */; };
+		B2B0C0B326EE469800CBD777 /* UIFont+CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B0C0B226EE469800CBD777 /* UIFont+CustomFonts.swift */; };
+		B2B0C0B726EE46BB00CBD777 /* UIColor+CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B0C0B626EE46BB00CBD777 /* UIColor+CustomColors.swift */; };
 		B2FE73D926EC6CAF000713B6 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FE73D826EC6CAF000713B6 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,8 @@
 		B2AF835926EC69DE0039C6B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2AF835C26EC69DE0039C6B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2AF835E26EC69DE0039C6B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2B0C0B226EE469800CBD777 /* UIFont+CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+CustomFonts.swift"; sourceTree = "<group>"; };
+		B2B0C0B626EE46BB00CBD777 /* UIColor+CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+CustomColors.swift"; sourceTree = "<group>"; };
 		B2FE73D826EC6CAF000713B6 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		FE2551E072B3A3323164BF39 /* Pods-SilentMoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilentMoon.release.xcconfig"; path = "Target Support Files/Pods-SilentMoon/Pods-SilentMoon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,9 +86,19 @@
 			path = SilentMoon;
 			sourceTree = "<group>";
 		};
+		B2B0C0B126EE467B00CBD777 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B2B0C0B226EE469800CBD777 /* UIFont+CustomFonts.swift */,
+				B2B0C0B626EE46BB00CBD777 /* UIColor+CustomColors.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B2FE73CA26EC6AD4000713B6 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B2B0C0B126EE467B00CBD777 /* Extensions */,
 				B2FE73D726EC6C83000713B6 /* Application */,
 				B2FE73E626EE3835000713B6 /* Modules */,
 			);
@@ -290,7 +304,9 @@
 				B2FE73D926EC6CAF000713B6 /* AppCoordinator.swift in Sources */,
 				B2AF835526EC69DC0039C6B2 /* OnboardingViewController.swift in Sources */,
 				B216E6DA26EE3B2000DDA9D5 /* R.generated.swift in Sources */,
+				B2B0C0B726EE46BB00CBD777 /* UIColor+CustomColors.swift in Sources */,
 				B2AF835126EC69DC0039C6B2 /* AppDelegate.swift in Sources */,
+				B2B0C0B326EE469800CBD777 /* UIFont+CustomFonts.swift in Sources */,
 				B2AF835326EC69DC0039C6B2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

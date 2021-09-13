@@ -14,6 +14,7 @@ class AppCoordinator {
   
   func start() {
     let viewController = OnboardingViewController()
+    navigationController?.setNavigationBarHidden(true, animated: false)
     navigationController?.pushViewController(viewController, animated: true)
   }
   
