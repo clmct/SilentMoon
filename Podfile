@@ -20,5 +20,6 @@ target 'SilentMoon' do
   pod 'SwiftLint'
   pod 'R.swift'
   pod 'SnapKit'
-
+  pod 'RxSwift'
+  pod 'RxCocoa'
 end

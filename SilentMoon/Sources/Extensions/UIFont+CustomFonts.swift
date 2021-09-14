@@ -22,9 +22,10 @@ extension UIFont {
     return .systemFont(ofSize: size, weight: .semibold)
   }
   
-  static let basic1 = UIFont.regularAppFont(ofSize: 17)
-  static let basic2 = UIFont.boldAppFont(ofSize: 17)
-  static let basic3 = UIFont.regularAppFont(ofSize: 30)
+  static let basic1 = UIFont.boldAppFont(ofSize: 30)
+  static let basic2 = UIFont.boldAppFont(ofSize: 16)
+  static let basic3 = UIFont.boldAppFont(ofSize: 28)
   static let basic4 = UIFont.regularAppFont(ofSize: 15)
   static let basic5 = UIFont.regularAppFont(ofSize: 240)
+  static let basic6 = UIFont.regularAppFont(ofSize: 14)
 }

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		921CF3DA39855BD16734E2BA /* Pods_SilentMoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C1575DAAAB962EF53113AE /* Pods_SilentMoon.framework */; };
 		B216E6DA26EE3B2000DDA9D5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B216E6D926EE3B2000DDA9D5 /* R.generated.swift */; };
+		B254D45F26EF940600C9CB82 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B254D45E26EF940600C9CB82 /* SignInViewController.swift */; };
+		B254D47826EFA46100C9CB82 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B254D47726EFA46100C9CB82 /* CustomTextField.swift */; };
 		B2AF835126EC69DC0039C6B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF835026EC69DC0039C6B2 /* AppDelegate.swift */; };
 		B2AF835326EC69DC0039C6B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF835226EC69DC0039C6B2 /* SceneDelegate.swift */; };
 		B2AF835526EC69DC0039C6B2 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF835426EC69DC0039C6B2 /* OnboardingViewController.swift */; };
@@ -23,6 +25,8 @@
 		060A43E3E55E481E6E6066CC /* Pods-SilentMoon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilentMoon.debug.xcconfig"; path = "Target Support Files/Pods-SilentMoon/Pods-SilentMoon.debug.xcconfig"; sourceTree = "<group>"; };
 		76C1575DAAAB962EF53113AE /* Pods_SilentMoon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SilentMoon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B216E6D926EE3B2000DDA9D5 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		B254D45E26EF940600C9CB82 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		B254D47726EFA46100C9CB82 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		B2AF834D26EC69DC0039C6B2 /* SilentMoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilentMoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2AF835026EC69DC0039C6B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2AF835226EC69DC0039C6B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +58,22 @@
 				76C1575DAAAB962EF53113AE /* Pods_SilentMoon.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B254D45D26EF93F000C9CB82 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				B254D45E26EF940600C9CB82 /* SignInViewController.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		B254D47626EFA44F00C9CB82 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B254D47726EFA46100C9CB82 /* CustomTextField.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		B2AF834426EC69DC0039C6B2 = {
@@ -134,7 +154,9 @@
 		B2FE73E626EE3835000713B6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				B254D47626EFA44F00C9CB82 /* Components */,
 				B2FE73CD26EC6B1F000713B6 /* Onboarding */,
+				B254D45D26EF93F000C9CB82 /* SignIn */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -306,8 +328,10 @@
 				B216E6DA26EE3B2000DDA9D5 /* R.generated.swift in Sources */,
 				B2B0C0B726EE46BB00CBD777 /* UIColor+CustomColors.swift in Sources */,
 				B2AF835126EC69DC0039C6B2 /* AppDelegate.swift in Sources */,
+				B254D45F26EF940600C9CB82 /* SignInViewController.swift in Sources */,
 				B2B0C0B326EE469800CBD777 /* UIFont+CustomFonts.swift in Sources */,
 				B2AF835326EC69DC0039C6B2 /* SceneDelegate.swift in Sources */,
+				B254D47826EFA46100C9CB82 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
