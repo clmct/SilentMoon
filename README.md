@@ -6,3 +6,5 @@
 * SwiftLint
 * R.swift
 * SnapKit
+* RxSwift
+* RxCocoa
