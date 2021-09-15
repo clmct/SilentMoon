@@ -13,6 +13,11 @@ class CustomTextFiled: UIView {
   
   // MARK: - Init
   
+  required init(placeholder: String) {
+    self.init()
+    textField.placeholder = placeholder
+  }
+  
   override init(frame: CGRect) {
     super.init(frame: frame)
     setupLayout()
@@ -40,7 +45,5 @@ class CustomTextFiled: UIView {
       make.leading.trailing.equalToSuperview().inset(20)
       make.bottom.equalToSuperview().inset(20)
     }
-    
-    textField.placeholder = "email"
   }
 }

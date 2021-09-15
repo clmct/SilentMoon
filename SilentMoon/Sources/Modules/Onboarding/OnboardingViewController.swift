@@ -13,11 +13,12 @@ class OnboardingViewController: UIViewController {
   
   private let backgroundImageView = UIImageView()
   private let foregroundImageView = UIImageView()
+  private let logoImageView = UIImageView()
   private let titleLabel = UILabel()
   private let descriptionLabel = UILabel()
   private let descriptionLogInLabel = UILabel()
-  private let signInButton = UIButton()
-  private let logInButton = UIButton()
+  private let signInButton = UIButton(type: .system)
+  private let logInButton = UIButton(type: .system)
   
   private let disposeBag = DisposeBag()
   
@@ -35,12 +36,14 @@ class OnboardingViewController: UIViewController {
     view.addSubview(backgroundImageView)
     backgroundImageView.addSubview(foregroundImageView)
     view.addSubview(logInButton)
+    view.addSubview(logoImageView)
     view.addSubview(titleLabel)
     view.addSubview(descriptionLabel)
     view.addSubview(signInButton)
     view.addSubview(descriptionLogInLabel)
     setupBackgroundImageView()
     setupForegroundImageView()
+    setupLogoImageView()
     setupTitleLabel()
     setupDescriptionLabel()
     setupSignInButton()
@@ -66,6 +69,16 @@ class OnboardingViewController: UIViewController {
     
     foregroundImageView.image = R.image.onboardingPerson()
     foregroundImageView.contentMode = .scaleAspectFit
+  }
+  
+  private func setupLogoImageView() {
+    logoImageView.snp.makeConstraints { make in
+      make.centerX.equalToSuperview()
+      make.top.equalToSuperview().inset(50)
+    }
+    
+    logoImageView.image = R.image.logo()
+    logoImageView.contentMode = .scaleAspectFit
   }
   
   private func setupTitleLabel() {
@@ -103,6 +116,7 @@ class OnboardingViewController: UIViewController {
     signInButton.backgroundColor = .basic2
     signInButton.layer.cornerRadius = 30
     signInButton.layer.masksToBounds = true
+    signInButton.setTitleColor(.white, for: .normal)
   }
   
   private func setupDescriptionLogInView() {

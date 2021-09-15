@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B57C6F726F1C9B6000BBB6F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B57C6F626F1C9B6000BBB6F /* CustomButton.swift */; };
+		8B57C6F926F1D9EE000BBB6F /* UIButton+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B57C6F826F1D9EE000BBB6F /* UIButton+Image.swift */; };
 		921CF3DA39855BD16734E2BA /* Pods_SilentMoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C1575DAAAB962EF53113AE /* Pods_SilentMoon.framework */; };
 		B216E6DA26EE3B2000DDA9D5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B216E6D926EE3B2000DDA9D5 /* R.generated.swift */; };
 		B254D45F26EF940600C9CB82 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B254D45E26EF940600C9CB82 /* SignInViewController.swift */; };
@@ -24,6 +26,8 @@
 /* Begin PBXFileReference section */
 		060A43E3E55E481E6E6066CC /* Pods-SilentMoon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilentMoon.debug.xcconfig"; path = "Target Support Files/Pods-SilentMoon/Pods-SilentMoon.debug.xcconfig"; sourceTree = "<group>"; };
 		76C1575DAAAB962EF53113AE /* Pods_SilentMoon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SilentMoon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B57C6F626F1C9B6000BBB6F /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		8B57C6F826F1D9EE000BBB6F /* UIButton+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Image.swift"; sourceTree = "<group>"; };
 		B216E6D926EE3B2000DDA9D5 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		B254D45E26EF940600C9CB82 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		B254D47726EFA46100C9CB82 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -72,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				B254D47726EFA46100C9CB82 /* CustomTextField.swift */,
+				8B57C6F626F1C9B6000BBB6F /* CustomButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 			children = (
 				B2B0C0B226EE469800CBD777 /* UIFont+CustomFonts.swift */,
 				B2B0C0B626EE46BB00CBD777 /* UIColor+CustomColors.swift */,
+				8B57C6F826F1D9EE000BBB6F /* UIButton+Image.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -327,7 +333,9 @@
 				B2AF835526EC69DC0039C6B2 /* OnboardingViewController.swift in Sources */,
 				B216E6DA26EE3B2000DDA9D5 /* R.generated.swift in Sources */,
 				B2B0C0B726EE46BB00CBD777 /* UIColor+CustomColors.swift in Sources */,
+				8B57C6F726F1C9B6000BBB6F /* CustomButton.swift in Sources */,
 				B2AF835126EC69DC0039C6B2 /* AppDelegate.swift in Sources */,
+				8B57C6F926F1D9EE000BBB6F /* UIButton+Image.swift in Sources */,
 				B254D45F26EF940600C9CB82 /* SignInViewController.swift in Sources */,
 				B2B0C0B326EE469800CBD777 /* UIFont+CustomFonts.swift in Sources */,
 				B2AF835326EC69DC0039C6B2 /* SceneDelegate.swift in Sources */,

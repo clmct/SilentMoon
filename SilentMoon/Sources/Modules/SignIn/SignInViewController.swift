@@ -16,8 +16,8 @@ class SignInViewController: UIViewController {
   private let googleButton = UIButton()
   private let loginButton = UIButton()
   private let emailDescriptionLabel = UILabel()
-  private let emailTextField = CustomTextFiled()
-  private let passwordTextField = CustomTextFiled()
+  private let emailTextField = CustomTextFiled(placeholder: "Email address")
+  private let passwordTextField = CustomTextFiled(placeholder: "Password")
   private let forgotPasswordLabel = UILabel()
   
   private let disposeBag = DisposeBag()
@@ -95,9 +95,11 @@ class SignInViewController: UIViewController {
     }
     
     facebookButton.setTitle("CONTINUE WITH FACEBOOK", for: .normal)
-    facebookButton.backgroundColor = .basic2
+    facebookButton.addLeftImage(image: R.image.f(), offset: 30)
+    facebookButton.backgroundColor = .basic4
     facebookButton.layer.cornerRadius = 30
     facebookButton.layer.masksToBounds = true
+    facebookButton.setTitleColor(.white, for: .normal)
   }
   
   private func setupGoogleButton() {
@@ -108,11 +110,13 @@ class SignInViewController: UIViewController {
     }
     
     googleButton.setTitle("CONTINUE WITH GOOGLE", for: .normal)
+    googleButton.addLeftImage(image: R.image.g(), offset: 30)
     googleButton.setTitleColor(.black, for: .normal)
     googleButton.backgroundColor = .white
     googleButton.layer.cornerRadius = 30
     googleButton.layer.masksToBounds = true
     googleButton.layer.borderWidth = 1
+    googleButton.layer.borderColor = UIColor(red: 0.922, green: 0.918, blue: 0.925, alpha: 1).cgColor
   }
   
   private func setupEmailDescriptionLabel() {
@@ -120,14 +124,14 @@ class SignInViewController: UIViewController {
   
   private func setupEmailTextField() {
     emailTextField.snp.makeConstraints { make in
-      make.width.equalTo(374)
+      make.leading.trailing.equalToSuperview().inset(20)
       make.centerX.centerY.equalToSuperview()
     }
   }
   
   private func setupPasswordTextField() {
     passwordTextField.snp.makeConstraints { make in
-      make.width.equalTo(374)
+      make.leading.trailing.equalToSuperview().inset(20)
       make.top.equalTo(emailTextField.snp.bottom).offset(20)
       make.centerX.equalTo(emailTextField.snp.centerX)
     }
