@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8B57C6F726F1C9B6000BBB6F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B57C6F626F1C9B6000BBB6F /* CustomButton.swift */; };
 		8B57C6F926F1D9EE000BBB6F /* UIButton+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B57C6F826F1D9EE000BBB6F /* UIButton+Image.swift */; };
 		921CF3DA39855BD16734E2BA /* Pods_SilentMoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76C1575DAAAB962EF53113AE /* Pods_SilentMoon.framework */; };
+		B2028F5326F847BB008A3B30 /* WelcomeSleepStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2028F5226F847BB008A3B30 /* WelcomeSleepStoryboard.storyboard */; };
+		B2028F5726F8C820008A3B30 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2028F5626F8C820008A3B30 /* WelcomeViewController.swift */; };
+		B2028F6926F8CF9D008A3B30 /* WelcomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2028F6826F8CF9D008A3B30 /* WelcomeStoryboard.storyboard */; };
+		B2028F6F26F8D2DE008A3B30 /* RemindersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2028F6E26F8D2DE008A3B30 /* RemindersViewController.swift */; };
+		B2028F7326F8D2F8008A3B30 /* RemindersStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2028F7226F8D2F8008A3B30 /* RemindersStoryboard.storyboard */; };
 		B216E6DA26EE3B2000DDA9D5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B216E6D926EE3B2000DDA9D5 /* R.generated.swift */; };
+		B24CC03B26F783B000CA0738 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24CC03A26F783B000CA0738 /* SignUpViewController.swift */; };
+		B24CC04026F785C600CA0738 /* WelcomeSleepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24CC03F26F785C600CA0738 /* WelcomeSleepViewController.swift */; };
 		B254D45F26EF940600C9CB82 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B254D45E26EF940600C9CB82 /* SignInViewController.swift */; };
 		B254D47826EFA46100C9CB82 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B254D47726EFA46100C9CB82 /* CustomTextField.swift */; };
 		B2AF835126EC69DC0039C6B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF835026EC69DC0039C6B2 /* AppDelegate.swift */; };
@@ -26,9 +32,15 @@
 /* Begin PBXFileReference section */
 		060A43E3E55E481E6E6066CC /* Pods-SilentMoon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilentMoon.debug.xcconfig"; path = "Target Support Files/Pods-SilentMoon/Pods-SilentMoon.debug.xcconfig"; sourceTree = "<group>"; };
 		76C1575DAAAB962EF53113AE /* Pods_SilentMoon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SilentMoon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B57C6F626F1C9B6000BBB6F /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		8B57C6F826F1D9EE000BBB6F /* UIButton+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Image.swift"; sourceTree = "<group>"; };
+		B2028F5226F847BB008A3B30 /* WelcomeSleepStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WelcomeSleepStoryboard.storyboard; sourceTree = "<group>"; };
+		B2028F5626F8C820008A3B30 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		B2028F6826F8CF9D008A3B30 /* WelcomeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WelcomeStoryboard.storyboard; sourceTree = "<group>"; };
+		B2028F6E26F8D2DE008A3B30 /* RemindersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersViewController.swift; sourceTree = "<group>"; };
+		B2028F7226F8D2F8008A3B30 /* RemindersStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RemindersStoryboard.storyboard; sourceTree = "<group>"; };
 		B216E6D926EE3B2000DDA9D5 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		B24CC03A26F783B000CA0738 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B24CC03F26F785C600CA0738 /* WelcomeSleepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeSleepViewController.swift; sourceTree = "<group>"; };
 		B254D45E26EF940600C9CB82 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		B254D47726EFA46100C9CB82 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		B2AF834D26EC69DC0039C6B2 /* SilentMoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilentMoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +76,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B2028F5526F8C809008A3B30 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				B2028F5626F8C820008A3B30 /* WelcomeViewController.swift */,
+				B2028F6826F8CF9D008A3B30 /* WelcomeStoryboard.storyboard */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		B2028F6D26F8D2BF008A3B30 /* Reminders */ = {
+			isa = PBXGroup;
+			children = (
+				B2028F6E26F8D2DE008A3B30 /* RemindersViewController.swift */,
+				B2028F7226F8D2F8008A3B30 /* RemindersStoryboard.storyboard */,
+			);
+			path = Reminders;
+			sourceTree = "<group>";
+		};
+		B24CC03926F7839100CA0738 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				B24CC03A26F783B000CA0738 /* SignUpViewController.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		B24CC03E26F7855D00CA0738 /* WelcomeSleep */ = {
+			isa = PBXGroup;
+			children = (
+				B24CC03F26F785C600CA0738 /* WelcomeSleepViewController.swift */,
+				B2028F5226F847BB008A3B30 /* WelcomeSleepStoryboard.storyboard */,
+			);
+			path = WelcomeSleep;
+			sourceTree = "<group>";
+		};
 		B254D45D26EF93F000C9CB82 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,7 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				B254D47726EFA46100C9CB82 /* CustomTextField.swift */,
-				8B57C6F626F1C9B6000BBB6F /* CustomButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -160,9 +206,13 @@
 		B2FE73E626EE3835000713B6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				B2028F6D26F8D2BF008A3B30 /* Reminders */,
+				B2028F5526F8C809008A3B30 /* Welcome */,
+				B24CC03E26F7855D00CA0738 /* WelcomeSleep */,
 				B254D47626EFA44F00C9CB82 /* Components */,
 				B2FE73CD26EC6B1F000713B6 /* Onboarding */,
 				B254D45D26EF93F000C9CB82 /* SignIn */,
+				B24CC03926F7839100CA0738 /* SignUp */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -237,8 +287,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2028F6926F8CF9D008A3B30 /* WelcomeStoryboard.storyboard in Resources */,
+				B2028F7326F8D2F8008A3B30 /* RemindersStoryboard.storyboard in Resources */,
 				B2AF835D26EC69DE0039C6B2 /* LaunchScreen.storyboard in Resources */,
 				B2AF835A26EC69DE0039C6B2 /* Assets.xcassets in Resources */,
+				B2028F5326F847BB008A3B30 /* WelcomeSleepStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,13 +386,16 @@
 				B2AF835526EC69DC0039C6B2 /* OnboardingViewController.swift in Sources */,
 				B216E6DA26EE3B2000DDA9D5 /* R.generated.swift in Sources */,
 				B2B0C0B726EE46BB00CBD777 /* UIColor+CustomColors.swift in Sources */,
-				8B57C6F726F1C9B6000BBB6F /* CustomButton.swift in Sources */,
 				B2AF835126EC69DC0039C6B2 /* AppDelegate.swift in Sources */,
+				B24CC03B26F783B000CA0738 /* SignUpViewController.swift in Sources */,
 				8B57C6F926F1D9EE000BBB6F /* UIButton+Image.swift in Sources */,
 				B254D45F26EF940600C9CB82 /* SignInViewController.swift in Sources */,
 				B2B0C0B326EE469800CBD777 /* UIFont+CustomFonts.swift in Sources */,
 				B2AF835326EC69DC0039C6B2 /* SceneDelegate.swift in Sources */,
+				B24CC04026F785C600CA0738 /* WelcomeSleepViewController.swift in Sources */,
 				B254D47826EFA46100C9CB82 /* CustomTextField.swift in Sources */,
+				B2028F5726F8C820008A3B30 /* WelcomeViewController.swift in Sources */,
+				B2028F6F26F8D2DE008A3B30 /* RemindersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

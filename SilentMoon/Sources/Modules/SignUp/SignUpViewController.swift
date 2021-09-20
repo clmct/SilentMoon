@@ -1,14 +1,16 @@
 //
-//  SignInViewController.swift
+//  SignUpViewController.swift
 //  SilentMoon
 //
 
 import UIKit
 import RxSwift
 
-class SignInViewController: UIViewController {
+class SignUpViewController: UIViewController {
   // MARK: - Properties
   
+  private let scrollView = UIScrollView()
+  private let contentView = UIView()
   private let backButton = UIButton()
   private let backgroundImageView = UIImageView()
   private let titleLabel = UILabel()
@@ -18,7 +20,8 @@ class SignInViewController: UIViewController {
   private let emailDescriptionLabel = UILabel()
   private let emailTextField = CustomTextFiled(placeholder: "Email address")
   private let passwordTextField = CustomTextFiled(placeholder: "Password")
-  private let forgotPasswordLabel = UILabel()
+  private let repeatPasswordTextField = CustomTextFiled(placeholder: "Password")
+  private let privacyLabel = UILabel()
   
   private let disposeBag = DisposeBag()
   
@@ -32,17 +35,22 @@ class SignInViewController: UIViewController {
   
   // MARK: - Private Methods
   private func setupLayout() {
-    view.addSubview(backgroundImageView)
-    view.addSubview(backButton)
-    view.addSubview(titleLabel)
-    view.addSubview(facebookButton)
-    view.addSubview(googleButton)
-    view.addSubview(emailDescriptionLabel)
-    view.addSubview(emailTextField)
-    view.addSubview(passwordTextField)
-    view.addSubview(loginButton)
-    view.addSubview(forgotPasswordLabel)
+    view.addSubview(scrollView)
+    scrollView.addSubview(contentView)
+    contentView.addSubview(backgroundImageView)
+    contentView.addSubview(backgroundImageView)
+    contentView.addSubview(backButton)
+    contentView.addSubview(titleLabel)
+    contentView.addSubview(facebookButton)
+    contentView.addSubview(googleButton)
+    contentView.addSubview(emailDescriptionLabel)
+    contentView.addSubview(emailTextField)
+    contentView.addSubview(passwordTextField)
+    contentView.addSubview(repeatPasswordTextField)
+    contentView.addSubview(loginButton)
+    contentView.addSubview(privacyLabel)
     
+    setupContentView()
     setupBackgroundImageView()
     setupBackButton()
     setupTitleLabel()
@@ -51,8 +59,20 @@ class SignInViewController: UIViewController {
     setupEmailDescriptionLabel()
     setupEmailTextField()
     setupPasswordTextField()
+    setupRepeatPasswordTextField()
     setupLoginButton()
-    setupForgotPasswordLabel()
+    setupPrivacyLabel()
+  }
+  
+  private func setupContentView() {
+    scrollView.snp.makeConstraints { make in
+      make.edges.equalToSuperview()
+    }
+    
+    contentView.snp.makeConstraints { make in
+      make.edges.equalToSuperview()
+      make.leading.trailing.equalTo(view)
+    }
   }
   
   private func setupBackgroundImageView() {
@@ -83,7 +103,7 @@ class SignInViewController: UIViewController {
       make.centerX.equalToSuperview()
     }
     
-    titleLabel.text = "Welcome Back!"
+    titleLabel.text = "Create your account"
     titleLabel.font = .basic3
   }
   
@@ -145,26 +165,41 @@ class SignInViewController: UIViewController {
     }
   }
   
+  private func setupRepeatPasswordTextField() {
+    repeatPasswordTextField.snp.makeConstraints { make in
+      make.leading.trailing.equalToSuperview().inset(20)
+      make.top.equalTo(passwordTextField.snp.bottom).offset(20)
+      make.centerX.equalTo(emailTextField.snp.centerX)
+    }
+  }
+  
+  private func setupPrivacyLabel() {
+    privacyLabel.snp.makeConstraints { make in
+      make.leading.trailing.equalToSuperview().inset(20)
+      make.top.equalTo(repeatPasswordTextField.snp.bottom).offset(15)
+    }
+    
+    privacyLabel.text = "I have read the Privacy Policy"
+    privacyLabel.font = .basic6
+    privacyLabel.textColor = UIColor.hexStringToUIColor(hex: "A1A4B2")
+  }
+  
   private func setupLoginButton() {
     loginButton.snp.makeConstraints { make in
       make.leading.trailing.equalToSuperview().inset(20)
-      make.top.equalTo(passwordTextField.snp.bottom).inset(-20)
+      make.top.equalTo(privacyLabel.snp.bottom).inset(-20)
       make.height.equalTo(63)
     }
     
-    loginButton.setTitle("LOG IN", for: .normal)
+    scrollView.snp.remakeConstraints { make in
+      make.edges.equalToSuperview()
+      make.leading.trailing.equalTo(view)
+      make.bottom.equalTo(loginButton.snp.bottom).offset(40)
+    }
+    
+    loginButton.setTitle("GET STARTED", for: .normal)
     loginButton.backgroundColor = .basic2
     loginButton.layer.cornerRadius = 30
     loginButton.layer.masksToBounds = true
   }
-  
-  private func setupForgotPasswordLabel() {
-    forgotPasswordLabel.snp.makeConstraints { make in
-      make.centerX.equalToSuperview()
-      make.top.equalTo(loginButton.snp.bottom).offset(20)
-    }
-    
-    forgotPasswordLabel.text = "Forgot Password?"
-  }
-
 }

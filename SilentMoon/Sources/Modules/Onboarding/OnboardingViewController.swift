@@ -17,7 +17,7 @@ class OnboardingViewController: UIViewController {
   private let titleLabel = UILabel()
   private let descriptionLabel = UILabel()
   private let descriptionLogInLabel = UILabel()
-  private let signInButton = UIButton(type: .system)
+  private let signUpButton = UIButton(type: .system)
   private let logInButton = UIButton(type: .system)
   
   private let disposeBag = DisposeBag()
@@ -39,14 +39,14 @@ class OnboardingViewController: UIViewController {
     view.addSubview(logoImageView)
     view.addSubview(titleLabel)
     view.addSubview(descriptionLabel)
-    view.addSubview(signInButton)
+    view.addSubview(signUpButton)
     view.addSubview(descriptionLogInLabel)
     setupBackgroundImageView()
     setupForegroundImageView()
     setupLogoImageView()
     setupTitleLabel()
     setupDescriptionLabel()
-    setupSignInButton()
+    setupSignUpButton()
     setupLogInButton()
     setupDescriptionLogInView()
   }
@@ -95,7 +95,7 @@ class OnboardingViewController: UIViewController {
   private func setupDescriptionLabel() {
     descriptionLabel.snp.makeConstraints { make in
       make.leading.trailing.equalToSuperview().inset(60)
-      make.bottom.equalTo(signInButton.snp.top).inset(-60)
+      make.bottom.equalTo(signUpButton.snp.top).inset(-60)
     }
     
     descriptionLabel.text = "Thousand of people are using silent moon for smalls meditation"
@@ -105,18 +105,22 @@ class OnboardingViewController: UIViewController {
     descriptionLabel.textColor = .basic1
   }
   
-  private func setupSignInButton() {
-    signInButton.snp.makeConstraints { make in
+  private func setupSignUpButton() {
+    signUpButton.snp.makeConstraints { make in
       make.leading.trailing.equalToSuperview().inset(20)
       make.bottom.equalTo(descriptionLogInLabel.snp.top).inset(-20)
       make.height.equalTo(63)
     }
     
-    signInButton.setTitle("SIGN UP", for: .normal)
-    signInButton.backgroundColor = .basic2
-    signInButton.layer.cornerRadius = 30
-    signInButton.layer.masksToBounds = true
-    signInButton.setTitleColor(.white, for: .normal)
+    signUpButton.setTitle("SIGN UP", for: .normal)
+    signUpButton.backgroundColor = .basic2
+    signUpButton.layer.cornerRadius = 30
+    signUpButton.layer.masksToBounds = true
+    signUpButton.setTitleColor(.white, for: .normal)
+    
+    signUpButton.rx.tap.subscribe { [weak self] _ in
+      self?.navigationController?.pushViewController(SignUpViewController(), animated: true)
+    }.disposed(by: disposeBag)
   }
   
   private func setupDescriptionLogInView() {
