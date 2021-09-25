@@ -18,8 +18,8 @@ class SignUpViewController: UIViewController {
   private let googleButton = UIButton()
   private let loginButton = UIButton()
   private let emailDescriptionLabel = UILabel()
-  private let emailTextField = CustomTextFiled(placeholder: "Email address")
-  private let passwordTextField = CustomTextFiled(placeholder: "Password")
+  private let emailTextField = CustomTextFiled(placeholder: "Name")
+  private let passwordTextField = CustomTextFiled(placeholder: "Email address")
   private let repeatPasswordTextField = CustomTextFiled(placeholder: "Password")
   private let privacyLabel = UILabel()
   
@@ -77,7 +77,7 @@ class SignUpViewController: UIViewController {
   
   private func setupBackgroundImageView() {
     backgroundImageView.snp.makeConstraints { make in
-      make.leading.trailing.top.equalToSuperview()
+      make.leading.trailing.top.equalTo(view)
     }
     
     backgroundImageView.image = R.image.back2()
@@ -179,9 +179,13 @@ class SignUpViewController: UIViewController {
       make.top.equalTo(repeatPasswordTextField.snp.bottom).offset(15)
     }
     
-    privacyLabel.text = "I have read the Privacy Policy"
+    let firstString = NSMutableAttributedString(string: "I have read the ",
+                                                attributes: [NSAttributedString.Key.foregroundColor: UIColor.basic9])
+    let secondString = NSAttributedString(string: "Privacy Policy",
+                                          attributes: [NSAttributedString.Key.foregroundColor: UIColor.basic2])
+    firstString.append(secondString)
+    privacyLabel.attributedText = firstString
     privacyLabel.font = .basic6
-    privacyLabel.textColor = UIColor.hexStringToUIColor(hex: "A1A4B2")
   }
   
   private func setupLoginButton() {
@@ -194,12 +198,16 @@ class SignUpViewController: UIViewController {
     scrollView.snp.remakeConstraints { make in
       make.edges.equalToSuperview()
       make.leading.trailing.equalTo(view)
-      make.bottom.equalTo(loginButton.snp.bottom).offset(40)
+      make.bottom.equalTo(loginButton.snp.bottom).offset(50)
     }
     
     loginButton.setTitle("GET STARTED", for: .normal)
     loginButton.backgroundColor = .basic2
     loginButton.layer.cornerRadius = 30
     loginButton.layer.masksToBounds = true
+    
+    loginButton.rx.tap.subscribe { [unowned self] _ in
+      self.navigationController?.pushViewController(WelcomeViewController.fromSB, animated: true)
+    }.disposed(by: disposeBag)
   }
 }

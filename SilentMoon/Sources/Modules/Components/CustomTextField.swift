@@ -5,6 +5,11 @@
 
 import UIKit
 
+enum TextFieldType {
+  case secure
+  case other
+}
+
 class CustomTextFiled: UIView {
   // MARK: - Properties
   

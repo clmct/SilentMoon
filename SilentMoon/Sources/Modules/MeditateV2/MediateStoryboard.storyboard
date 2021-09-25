@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17503.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17502"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mediate View Controller-->
+        <scene sceneID="nln-A8-5P8">
+            <objects>
+                <viewController storyboardIdentifier="meditate" id="9J5-W4-lnQ" customClass="MediateViewController" customModule="SilentMoon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x6d-dp-FCc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meditate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6UB-oB-cAe">
+                                <rect key="frame" x="20" y="64" width="374" height="28"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="we can learn how to recognize when our minds are doing their normal everyday acrobatics." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8C-HR-Bcj">
+                                <rect key="frame" x="20" y="102.5" width="374" height="68.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
+                                <color key="textColor" red="0.63137254899999995" green="0.64313725489999995" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UyJ-pi-1Jq">
+                                <rect key="frame" x="20" y="276" width="374" height="90"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="meditatev2play" translatesAutoresizingMaskIntoConstraints="NO" id="Ohg-hr-w4h">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="90"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Calm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Qe-mq-Fs0">
+                                        <rect key="frame" x="30" y="25" width="91.5" height="22"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" red="0.24705882352941178" green="0.25490196078431371" blue="0.30588235294117649" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2e-fl-vw1">
+                                        <rect key="frame" x="304" y="25" width="40" height="40"/>
+                                        <state key="normal" image="play2"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APR • PAUSE PRACTICE " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdC-lK-s6T">
+                                        <rect key="frame" x="30" y="49.5" width="139.5" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.3529411764705882" green="0.38039215686274508" blue="0.45882352941176469" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Ohg-hr-w4h" firstAttribute="leading" secondItem="UyJ-pi-1Jq" secondAttribute="leading" id="IT8-WI-dd4"/>
+                                    <constraint firstItem="c2e-fl-vw1" firstAttribute="centerY" secondItem="Ohg-hr-w4h" secondAttribute="centerY" id="QYC-ib-tJv"/>
+                                    <constraint firstItem="bdC-lK-s6T" firstAttribute="top" secondItem="2Qe-mq-Fs0" secondAttribute="bottom" constant="2.5" id="VFm-G8-zgX"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ohg-hr-w4h" secondAttribute="bottom" id="cJk-IP-3Pz"/>
+                                    <constraint firstItem="Ohg-hr-w4h" firstAttribute="top" secondItem="UyJ-pi-1Jq" secondAttribute="top" id="crt-ad-ltF"/>
+                                    <constraint firstAttribute="trailing" secondItem="c2e-fl-vw1" secondAttribute="trailing" constant="30" id="neB-sP-J0u"/>
+                                    <constraint firstItem="2Qe-mq-Fs0" firstAttribute="leading" secondItem="UyJ-pi-1Jq" secondAttribute="leading" constant="30" id="q1z-H1-Jiz"/>
+                                    <constraint firstItem="2Qe-mq-Fs0" firstAttribute="top" secondItem="UyJ-pi-1Jq" secondAttribute="top" constant="25" id="qSU-Rg-yfg"/>
+                                    <constraint firstItem="bdC-lK-s6T" firstAttribute="leading" secondItem="UyJ-pi-1Jq" secondAttribute="leading" constant="30" id="thS-13-pjY"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ohg-hr-w4h" secondAttribute="trailing" id="vOH-SA-2gs"/>
+                                    <constraint firstAttribute="height" constant="90" id="xoj-Ad-d3e"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tiy-lD-XqF">
+                                <rect key="frame" x="20" y="386" width="374" height="476"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BaJ-oE-deZ">
+                                <rect key="frame" x="0.0" y="170" width="414" height="92"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="AkU-0c-Sgq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cr5-od-7uQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BaJ-oE-deZ" firstAttribute="top" secondItem="e8C-HR-Bcj" secondAttribute="bottom" constant="-1" id="26Y-2f-2x2"/>
+                            <constraint firstItem="cr5-od-7uQ" firstAttribute="trailing" secondItem="e8C-HR-Bcj" secondAttribute="trailing" constant="20" id="2Ey-PL-9AU"/>
+                            <constraint firstItem="Tiy-lD-XqF" firstAttribute="top" secondItem="Ohg-hr-w4h" secondAttribute="bottom" constant="20" id="3GP-k0-e1k"/>
+                            <constraint firstItem="Tiy-lD-XqF" firstAttribute="leading" secondItem="cr5-od-7uQ" secondAttribute="leading" constant="20" id="5VV-6Z-b1e"/>
+                            <constraint firstItem="cr5-od-7uQ" firstAttribute="trailing" secondItem="BaJ-oE-deZ" secondAttribute="trailing" id="A3c-eS-Wlc"/>
+                            <constraint firstItem="Ohg-hr-w4h" firstAttribute="top" secondItem="BaJ-oE-deZ" secondAttribute="bottom" constant="14" id="Bp8-ZS-x4H"/>
+                            <constraint firstItem="BaJ-oE-deZ" firstAttribute="leading" secondItem="cr5-od-7uQ" secondAttribute="leading" id="C4f-IB-ghe"/>
+                            <constraint firstItem="cr5-od-7uQ" firstAttribute="bottom" secondItem="Tiy-lD-XqF" secondAttribute="bottom" id="MZ7-e3-RyH"/>
+                            <constraint firstItem="e8C-HR-Bcj" firstAttribute="top" secondItem="6UB-oB-cAe" secondAttribute="bottom" constant="10.5" id="VLj-cG-Xxx"/>
+                            <constraint firstItem="6UB-oB-cAe" firstAttribute="leading" secondItem="cr5-od-7uQ" secondAttribute="leading" constant="20" id="c8D-8x-MYN"/>
+                            <constraint firstItem="e8C-HR-Bcj" firstAttribute="leading" secondItem="cr5-od-7uQ" secondAttribute="leading" constant="20" id="cYW-8T-1e2"/>
+                            <constraint firstItem="UyJ-pi-1Jq" firstAttribute="leading" secondItem="x6d-dp-FCc" secondAttribute="leading" constant="20" id="ehi-NW-468"/>
+                            <constraint firstItem="6UB-oB-cAe" firstAttribute="top" secondItem="cr5-od-7uQ" secondAttribute="top" constant="20" id="etV-bF-lMA"/>
+                            <constraint firstItem="cr5-od-7uQ" firstAttribute="trailing" secondItem="UyJ-pi-1Jq" secondAttribute="trailing" constant="20" id="rJF-Ps-hqD"/>
+                            <constraint firstItem="cr5-od-7uQ" firstAttribute="trailing" secondItem="Tiy-lD-XqF" secondAttribute="trailing" constant="20" id="rvg-yy-qvb"/>
+                            <constraint firstItem="cr5-od-7uQ" firstAttribute="trailing" secondItem="6UB-oB-cAe" secondAttribute="trailing" constant="20" id="vZp-xQ-TwB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="Tiy-lD-XqF" id="jFk-Ph-OA6"/>
+                        <outlet property="firstContentView" destination="BaJ-oE-deZ" id="w7z-Zb-5ZP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MXk-tH-52m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="166.66666666666669" y="120.53571428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="meditatev2play" width="374" height="95"/>
+        <image name="play2" width="40" height="40"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17503.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17502"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,26 +14,26 @@
             <objects>
                 <viewController storyboardIdentifier="reminders" id="aRl-GR-Imy" customClass="RemindersViewController" customModule="SilentMoon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sj7-jO-XYW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What time would you like to meditate?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmo-wJ-qa2">
-                                <rect key="frame" x="20" y="80" width="294" height="57.5"/>
+                                <rect key="frame" x="20" y="30" width="255" height="57.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" red="0.24705882352941178" green="0.25490196078431371" blue="0.30588235294117649" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Any time you can choose but We recommend first thing in th morning." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlC-8D-p7C">
-                                <rect key="frame" x="20" y="152.5" width="374" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Any time you can choose but We recommend first thing in th morning." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlC-8D-p7C">
+                                <rect key="frame" x="20" y="102.5" width="335" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.63137254901960782" green="0.64313725490196072" blue="0.69803921568627447" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="nrc-Qc-Osn">
-                                <rect key="frame" x="5" y="223.5" width="404" height="200"/>
+                                <rect key="frame" x="5" y="158.5" width="365" height="180"/>
                                 <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.97647058823529409" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="45N-TY-bxx"/>
+                                    <constraint firstAttribute="height" constant="180" id="45N-TY-bxx"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -41,24 +42,24 @@
                                 </userDefinedRuntimeAttributes>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which day would you like to meditate?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVx-8Y-1vh">
-                                <rect key="frame" x="20" y="453.5" width="294" height="57.5"/>
+                                <rect key="frame" x="20" y="353.5" width="255" height="57.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <color key="textColor" red="0.2470588235" green="0.25490196079999999" blue="0.30588235289999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3HQ-cg-9Gq">
-                                <rect key="frame" x="20" y="526" width="374" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3HQ-cg-9Gq">
+                                <rect key="frame" x="20" y="426" width="335" height="38.5"/>
                                 <string key="text">Everyday is best, but we recommend picking
 at least five.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.63137254899999995" green="0.64313725489999995" blue="0.69803921570000005" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="GSs-HJ-t1E">
-                                <rect key="frame" x="30" y="597" width="354" height="40.5"/>
+                                <rect key="frame" x="26" y="479.5" width="323" height="36"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEo-uk-z7A">
-                                        <rect key="frame" x="0.0" y="0.0" width="40.5" height="40.5"/>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEo-uk-z7A">
+                                        <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
                                         <color key="backgroundColor" red="0.2470588235" green="0.25490196079999999" blue="0.30588235289999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="iEo-uk-z7A" secondAttribute="height" multiplier="1:1" id="EaU-cA-Y4N"/>
@@ -66,14 +67,9 @@ at least five.</string>
                                         <state key="normal" title="SU">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="20"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUv-n9-sxf">
-                                        <rect key="frame" x="52.5" y="0.0" width="40" height="40.5"/>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUv-n9-sxf">
+                                        <rect key="frame" x="48" y="0.0" width="35.5" height="36"/>
                                         <color key="backgroundColor" red="0.2470588235" green="0.25490196079999999" blue="0.30588235289999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="KUv-n9-sxf" secondAttribute="height" multiplier="1:1" id="pT2-FN-gBL"/>
@@ -81,14 +77,9 @@ at least five.</string>
                                         <state key="normal" title="M">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="20"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1YK-B0-xBn">
-                                        <rect key="frame" x="104.5" y="0.0" width="40.5" height="40.5"/>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1YK-B0-xBn">
+                                        <rect key="frame" x="95.5" y="0.0" width="36" height="36"/>
                                         <color key="backgroundColor" red="0.2470588235" green="0.25490196079999999" blue="0.30588235289999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="1YK-B0-xBn" secondAttribute="height" multiplier="1:1" id="i5r-Zy-e8X"/>
@@ -96,14 +87,9 @@ at least five.</string>
                                         <state key="normal" title="T">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="20"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3z-UI-fl1">
-                                        <rect key="frame" x="157" y="0.0" width="40" height="40.5"/>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3z-UI-fl1">
+                                        <rect key="frame" x="143.5" y="0.0" width="36" height="36"/>
                                         <color key="backgroundColor" red="0.2470588235" green="0.25490196079999999" blue="0.30588235289999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="G3z-UI-fl1" secondAttribute="height" multiplier="1:1" id="4Gw-0P-WGg"/>
@@ -111,14 +97,9 @@ at least five.</string>
                                         <state key="normal" title="W">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="20"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XdT-sq-QPG">
-                                        <rect key="frame" x="209" y="0.0" width="40.5" height="40.5"/>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XdT-sq-QPG">
+                                        <rect key="frame" x="191.5" y="0.0" width="36" height="36"/>
                                         <color key="backgroundColor" red="0.2470588235" green="0.25490196079999999" blue="0.30588235289999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="XdT-sq-QPG" secondAttribute="height" multiplier="1:1" id="f5Z-5A-yn5"/>
@@ -126,14 +107,9 @@ at least five.</string>
                                         <state key="normal" title="TH">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="20"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEL-ll-tDP">
-                                        <rect key="frame" x="261.5" y="0.0" width="40" height="40.5"/>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEL-ll-tDP">
+                                        <rect key="frame" x="239.5" y="0.0" width="35.5" height="36"/>
                                         <color key="backgroundColor" red="0.2470588235" green="0.25490196079999999" blue="0.30588235289999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="xEL-ll-tDP" secondAttribute="height" multiplier="1:1" id="ObD-t6-3SI"/>
@@ -141,14 +117,9 @@ at least five.</string>
                                         <state key="normal" title="F">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="20"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf8-NG-v4J">
-                                        <rect key="frame" x="313.5" y="0.0" width="40.5" height="40.5"/>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf8-NG-v4J">
+                                        <rect key="frame" x="287" y="0.0" width="36" height="36"/>
                                         <color key="backgroundColor" red="0.2470588235" green="0.25490196079999999" blue="0.30588235289999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="hf8-NG-v4J" secondAttribute="height" multiplier="1:1" id="Mzb-MH-QaB"/>
@@ -156,16 +127,11 @@ at least five.</string>
                                         <state key="normal" title="S">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="20"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
                                     </button>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Woo-Xz-0fA">
-                                <rect key="frame" x="20" y="753" width="374" height="63"/>
+                                <rect key="frame" x="20" y="544" width="335" height="63"/>
                                 <color key="backgroundColor" red="0.5568627451" green="0.59215686270000001" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="Tme-HN-9o8"/>
@@ -179,24 +145,31 @@ at least five.</string>
                                         <integer key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="saveAction:" destination="aRl-GR-Imy" eventType="touchUpInside" id="6Fu-9Y-FtF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uwy-W4-DX4">
-                                <rect key="frame" x="40" y="832" width="334" height="29"/>
+                                <rect key="frame" x="36" y="623" width="303" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="NO THANKS">
                                     <color key="titleColor" red="0.24705882352941178" green="0.25490196078431371" blue="0.30588235294117649" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="noThanksAction:" destination="aRl-GR-Imy" eventType="touchUpInside" id="aCP-E1-Os6"/>
+                                </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="iVu-EA-twc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="Woo-Xz-0fA" secondAttribute="bottom" constant="80" id="6Wz-Au-TIA"/>
+                            <constraint firstItem="iVu-EA-twc" firstAttribute="bottom" secondItem="Woo-Xz-0fA" secondAttribute="bottom" constant="60" id="6Wz-Au-TIA"/>
                             <constraint firstItem="zlC-8D-p7C" firstAttribute="top" secondItem="gmo-wJ-qa2" secondAttribute="bottom" constant="15" id="6uv-63-6TE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uwy-W4-DX4" secondAttribute="trailing" constant="20" id="7bU-b1-NfT"/>
                             <constraint firstAttribute="trailing" secondItem="3HQ-cg-9Gq" secondAttribute="trailing" constant="20" id="8n0-bd-1E3"/>
                             <constraint firstItem="3HQ-cg-9Gq" firstAttribute="leading" secondItem="Sj7-jO-XYW" secondAttribute="leading" constant="20" id="ALT-ZM-jfD"/>
                             <constraint firstItem="nrc-Qc-Osn" firstAttribute="leading" secondItem="Sj7-jO-XYW" secondAttribute="leading" constant="5" id="BwK-x5-IvS"/>
-                            <constraint firstItem="GSs-HJ-t1E" firstAttribute="top" secondItem="3HQ-cg-9Gq" secondAttribute="bottom" constant="30" id="QcB-eS-GPv"/>
+                            <constraint firstItem="GSs-HJ-t1E" firstAttribute="top" secondItem="3HQ-cg-9Gq" secondAttribute="bottom" constant="15" id="QcB-eS-GPv"/>
                             <constraint firstAttribute="trailing" secondItem="MVx-8Y-1vh" secondAttribute="trailing" constant="100" id="SE6-1h-PJx"/>
                             <constraint firstItem="gmo-wJ-qa2" firstAttribute="leading" secondItem="Sj7-jO-XYW" secondAttribute="leading" constant="20" id="Vxo-bE-Yuu"/>
                             <constraint firstItem="uwy-W4-DX4" firstAttribute="top" secondItem="Woo-Xz-0fA" secondAttribute="bottom" constant="16" id="Xem-xT-JXi"/>
@@ -208,14 +181,24 @@ at least five.</string>
                             <constraint firstAttribute="trailing" secondItem="gmo-wJ-qa2" secondAttribute="trailing" constant="100" id="k0v-Yb-KUR"/>
                             <constraint firstItem="zlC-8D-p7C" firstAttribute="leading" secondItem="Sj7-jO-XYW" secondAttribute="leading" constant="20" id="l2n-Nf-Ofn"/>
                             <constraint firstAttribute="trailing" secondItem="zlC-8D-p7C" secondAttribute="trailing" constant="20" id="mih-oJ-r64"/>
-                            <constraint firstItem="gmo-wJ-qa2" firstAttribute="top" secondItem="Sj7-jO-XYW" secondAttribute="top" constant="80" id="oAe-ja-Vbr"/>
+                            <constraint firstItem="gmo-wJ-qa2" firstAttribute="top" secondItem="iVu-EA-twc" secondAttribute="top" constant="30" id="oAe-ja-Vbr"/>
                             <constraint firstAttribute="trailing" secondItem="nrc-Qc-Osn" secondAttribute="trailing" constant="5" id="rSP-ed-h0Z"/>
+                            <constraint firstItem="Woo-Xz-0fA" firstAttribute="top" relation="greaterThanOrEqual" secondItem="GSs-HJ-t1E" secondAttribute="bottom" priority="999" constant="20" id="rhe-1M-ysk"/>
                             <constraint firstItem="Woo-Xz-0fA" firstAttribute="leading" secondItem="Sj7-jO-XYW" secondAttribute="leading" constant="20" id="s3n-Mz-ZT1"/>
-                            <constraint firstItem="MVx-8Y-1vh" firstAttribute="top" secondItem="nrc-Qc-Osn" secondAttribute="bottom" constant="30" id="t2w-ns-CAM"/>
-                            <constraint firstItem="nrc-Qc-Osn" firstAttribute="top" secondItem="zlC-8D-p7C" secondAttribute="bottom" constant="30" id="yaR-8X-fW1"/>
+                            <constraint firstItem="MVx-8Y-1vh" firstAttribute="top" secondItem="nrc-Qc-Osn" secondAttribute="bottom" constant="15" id="t2w-ns-CAM"/>
+                            <constraint firstItem="nrc-Qc-Osn" firstAttribute="top" secondItem="zlC-8D-p7C" secondAttribute="bottom" constant="15" id="yaR-8X-fW1"/>
                             <constraint firstItem="MVx-8Y-1vh" firstAttribute="leading" secondItem="Sj7-jO-XYW" secondAttribute="leading" constant="20" id="zP7-f9-aXi"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="dayButtonOutlets" destination="iEo-uk-z7A" collectionClass="NSMutableArray" id="bOr-0K-TX5"/>
+                        <outletCollection property="dayButtonOutlets" destination="KUv-n9-sxf" collectionClass="NSMutableArray" id="6eo-Zk-ftS"/>
+                        <outletCollection property="dayButtonOutlets" destination="1YK-B0-xBn" collectionClass="NSMutableArray" id="ImK-zH-fuQ"/>
+                        <outletCollection property="dayButtonOutlets" destination="G3z-UI-fl1" collectionClass="NSMutableArray" id="41L-rT-mEB"/>
+                        <outletCollection property="dayButtonOutlets" destination="XdT-sq-QPG" collectionClass="NSMutableArray" id="GsP-tb-Mvd"/>
+                        <outletCollection property="dayButtonOutlets" destination="xEL-ll-tDP" collectionClass="NSMutableArray" id="TES-ac-7NB"/>
+                        <outletCollection property="dayButtonOutlets" destination="hf8-NG-v4J" collectionClass="NSMutableArray" id="Q14-eP-c95"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q67-xA-baU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17502"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,7 +34,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EF1-r4-HCb">
-                                <rect key="frame" x="20" y="593" width="374" height="63"/>
+                                <rect key="frame" x="20" y="623" width="374" height="63"/>
                                 <color key="backgroundColor" red="0.92156862745098034" green="0.91764705882352937" blue="0.92549019607843142" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="pP6-TA-B9O"/>
@@ -46,6 +47,9 @@
                                         <integer key="value" value="30"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startAction:" destination="8KP-EV-UhU" eventType="touchUpInside" id="paq-TH-mW8"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOC-na-Ild">
                                 <rect key="frame" x="50" y="155" width="314" height="71.666666666666686"/>
@@ -56,6 +60,7 @@ to Silent Moon</string>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="0f6-3q-6tq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="qFx-9V-2PB" firstAttribute="top" secondItem="W8e-C0-eM1" secondAttribute="top" id="2eK-8p-NUU"/>
@@ -72,7 +77,7 @@ to Silent Moon</string>
                             <constraint firstAttribute="trailing" secondItem="VOC-na-Ild" secondAttribute="trailing" constant="50" id="l89-pt-8gY"/>
                             <constraint firstAttribute="bottom" secondItem="qFx-9V-2PB" secondAttribute="bottom" id="oFY-e7-sgE"/>
                             <constraint firstItem="1Qt-bz-IZo" firstAttribute="top" secondItem="W8e-C0-eM1" secondAttribute="top" constant="50" id="qKN-Fm-cVp"/>
-                            <constraint firstAttribute="bottom" secondItem="EF1-r4-HCb" secondAttribute="bottom" constant="80" id="tSf-kY-WPd"/>
+                            <constraint firstAttribute="bottom" secondItem="EF1-r4-HCb" secondAttribute="bottom" constant="50" id="tSf-kY-WPd"/>
                         </constraints>
                     </view>
                 </viewController>

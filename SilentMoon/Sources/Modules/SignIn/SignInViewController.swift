@@ -9,13 +9,17 @@ import RxSwift
 class SignInViewController: UIViewController {
   // MARK: - Properties
   
+  private let scrollView = UIScrollView()
+  private let contentView = UIView()
   private let backButton = UIButton()
   private let backgroundImageView = UIImageView()
   private let titleLabel = UILabel()
   private let facebookButton = UIButton()
   private let googleButton = UIButton()
   private let loginButton = UIButton()
+  private let signupButton = UIButton()
   private let emailDescriptionLabel = UILabel()
+  private let descriptionSignUpLabel = UILabel()
   private let emailTextField = CustomTextFiled(placeholder: "Email address")
   private let passwordTextField = CustomTextFiled(placeholder: "Password")
   private let forgotPasswordLabel = UILabel()
@@ -31,18 +35,24 @@ class SignInViewController: UIViewController {
   }
   
   // MARK: - Private Methods
+  
   private func setupLayout() {
-    view.addSubview(backgroundImageView)
-    view.addSubview(backButton)
-    view.addSubview(titleLabel)
-    view.addSubview(facebookButton)
-    view.addSubview(googleButton)
-    view.addSubview(emailDescriptionLabel)
-    view.addSubview(emailTextField)
-    view.addSubview(passwordTextField)
-    view.addSubview(loginButton)
-    view.addSubview(forgotPasswordLabel)
+    view.addSubview(scrollView)
+    scrollView.addSubview(contentView)
+    contentView.addSubview(backgroundImageView)
+    contentView.addSubview(backButton)
+    contentView.addSubview(titleLabel)
+    contentView.addSubview(facebookButton)
+    contentView.addSubview(googleButton)
+    contentView.addSubview(emailDescriptionLabel)
+    contentView.addSubview(emailTextField)
+    contentView.addSubview(passwordTextField)
+    contentView.addSubview(loginButton)
+    contentView.addSubview(forgotPasswordLabel)
+    contentView.addSubview(descriptionSignUpLabel)
+    contentView.addSubview(signupButton)
     
+    setupContentView()
     setupBackgroundImageView()
     setupBackButton()
     setupTitleLabel()
@@ -53,11 +63,24 @@ class SignInViewController: UIViewController {
     setupPasswordTextField()
     setupLoginButton()
     setupForgotPasswordLabel()
+    setupDescriptionSignUpView()
+    setupSignUpButton()
+  }
+  
+  private func setupContentView() {
+    scrollView.snp.makeConstraints { make in
+      make.edges.equalToSuperview()
+    }
+    
+    contentView.snp.makeConstraints { make in
+      make.edges.equalToSuperview()
+      make.leading.trailing.equalTo(view)
+    }
   }
   
   private func setupBackgroundImageView() {
     backgroundImageView.snp.makeConstraints { make in
-      make.leading.trailing.top.equalToSuperview()
+      make.leading.trailing.top.equalTo(view)
     }
     
     backgroundImageView.image = R.image.back2()
@@ -156,6 +179,10 @@ class SignInViewController: UIViewController {
     loginButton.backgroundColor = .basic2
     loginButton.layer.cornerRadius = 30
     loginButton.layer.masksToBounds = true
+    
+    loginButton.rx.tap.subscribe { [unowned self] _ in
+      self.navigationController?.pushViewController(WelcomeViewController.fromSB, animated: true)
+    }.disposed(by: disposeBag)
   }
   
   private func setupForgotPasswordLabel() {
@@ -166,5 +193,40 @@ class SignInViewController: UIViewController {
     
     forgotPasswordLabel.text = "Forgot Password?"
   }
-
+  
+  private func setupDescriptionSignUpView() {
+    descriptionSignUpLabel.snp.makeConstraints { make in
+      make.leading.equalToSuperview().inset(60)
+      make.top.equalTo(forgotPasswordLabel.snp.bottom).offset(20)
+    }
+    
+    scrollView.snp.remakeConstraints { make in
+      make.edges.equalToSuperview()
+      make.leading.trailing.equalTo(view)
+      make.bottom.equalTo(descriptionSignUpLabel.snp.bottom).offset(20)
+    }
+    
+    descriptionSignUpLabel.text = "ALREADY HAVE AN ACCOUNT? "
+    descriptionSignUpLabel.font = .basic6
+    descriptionSignUpLabel.textColor = .basic1
+    descriptionSignUpLabel.minimumScaleFactor = 0.5
+    descriptionSignUpLabel.adjustsFontSizeToFitWidth = true
+  }
+  
+  private func setupSignUpButton() {
+    signupButton.snp.makeConstraints { make in
+      make.leading.equalTo(descriptionSignUpLabel.snp.trailing)
+      make.bottom.equalTo(descriptionSignUpLabel.snp.bottom)
+      make.top.equalTo(descriptionSignUpLabel.snp.top)
+      make.trailing.equalToSuperview().inset(60)
+    }
+    
+    signupButton.setTitle("SIGN UP", for: .normal)
+    signupButton.setTitleColor(.basic2, for: .normal)
+    signupButton.titleLabel?.font = .basic6
+    
+    signupButton.rx.tap.subscribe { [unowned self] _ in
+      self.navigationController?.pushViewController(SignUpViewController(), animated: true)
+    }.disposed(by: disposeBag)
+    }
 }

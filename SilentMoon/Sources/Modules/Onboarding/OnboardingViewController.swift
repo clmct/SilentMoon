@@ -64,7 +64,7 @@ class OnboardingViewController: UIViewController {
   private func setupForegroundImageView() {
     foregroundImageView.snp.makeConstraints { make in
       make.leading.trailing.equalToSuperview().inset(50)
-      make.bottom.equalToSuperview().inset(100)
+      make.bottom.equalToSuperview().inset(60)
     }
     
     foregroundImageView.image = R.image.onboardingPerson()
@@ -90,6 +90,8 @@ class OnboardingViewController: UIViewController {
     titleLabel.text = "We are what we do"
     titleLabel.textAlignment = .center
     titleLabel.font = .basic1
+    titleLabel.minimumScaleFactor = 0.5
+    titleLabel.adjustsFontSizeToFitWidth = true
   }
   
   private func setupDescriptionLabel() {
@@ -103,6 +105,8 @@ class OnboardingViewController: UIViewController {
     descriptionLabel.textAlignment = .center
     descriptionLabel.font = .basic2
     descriptionLabel.textColor = .basic1
+    descriptionLabel.minimumScaleFactor = 0.5
+    descriptionLabel.adjustsFontSizeToFitWidth = true
   }
   
   private func setupSignUpButton() {
@@ -125,13 +129,15 @@ class OnboardingViewController: UIViewController {
   
   private func setupDescriptionLogInView() {
     descriptionLogInLabel.snp.makeConstraints { make in
-      make.leading.equalToSuperview().inset(60)
-      make.bottom.equalToSuperview().inset(100)
+      make.leading.equalToSuperview().offset(60)
+      make.bottom.equalToSuperview().offset(-40)
     }
     
-    descriptionLogInLabel.text = "ALREADY HAVE AN ACCOUNT?"
+    descriptionLogInLabel.text = "ALREADY HAVE AN ACCOUNT? "
     descriptionLogInLabel.font = .basic6
     descriptionLogInLabel.textColor = .basic1
+    descriptionLogInLabel.minimumScaleFactor = 0.5
+    descriptionLogInLabel.adjustsFontSizeToFitWidth = true
   }
 
   private func setupLogInButton() {
@@ -146,8 +152,8 @@ class OnboardingViewController: UIViewController {
     logInButton.setTitleColor(.basic2, for: .normal)
     logInButton.titleLabel?.font = .basic6
     
-    logInButton.rx.tap.subscribe { [weak self] _ in
-      self?.navigationController?.pushViewController(SignInViewController(), animated: true)
+    logInButton.rx.tap.subscribe { [unowned self] _ in
+      self.navigationController?.pushViewController(SignInViewController(), animated: true)
     }.disposed(by: disposeBag)
     }
   }

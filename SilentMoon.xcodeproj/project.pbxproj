@@ -19,13 +19,29 @@
 		B24CC04026F785C600CA0738 /* WelcomeSleepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24CC03F26F785C600CA0738 /* WelcomeSleepViewController.swift */; };
 		B254D45F26EF940600C9CB82 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B254D45E26EF940600C9CB82 /* SignInViewController.swift */; };
 		B254D47826EFA46100C9CB82 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B254D47726EFA46100C9CB82 /* CustomTextField.swift */; };
+		B26C1B4626FE231F00D1EEAE /* SleepMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26C1B4526FE231F00D1EEAE /* SleepMusicViewController.swift */; };
+		B26C1B4926FE24D400D1EEAE /* SleepMusicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26C1B4826FE24D400D1EEAE /* SleepMusicCollectionViewCell.swift */; };
+		B26C1B5626FE440A00D1EEAE /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26C1B5526FE440A00D1EEAE /* TabBarCoordinator.swift */; };
+		B26C1B5A26FE446800D1EEAE /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26C1B5926FE446800D1EEAE /* CoordinatorProtocol.swift */; };
+		B26C1B5E26FE458800D1EEAE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26C1B5D26FE458800D1EEAE /* HomeViewController.swift */; };
+		B26C1B6126FE45E600D1EEAE /* SleepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26C1B6026FE45E600D1EEAE /* SleepViewController.swift */; };
+		B26C1B6426FE461600D1EEAE /* MediateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26C1B6326FE461600D1EEAE /* MediateViewController.swift */; };
+		B26C1B6A26FE56B900D1EEAE /* ChooseTopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26C1B6926FE56B900D1EEAE /* ChooseTopicViewController.swift */; };
+		B26C1B6D26FE57E400D1EEAE /* ChooseTopicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26C1B6C26FE57E400D1EEAE /* ChooseTopicCollectionViewCell.swift */; };
+		B26C1B7D26FE5E4600D1EEAE /* PinterestCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26C1B7C26FE5E4600D1EEAE /* PinterestCollectionViewLayout.swift */; };
+		B26C1B8326FE7C5D00D1EEAE /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26C1B8226FE7C5D00D1EEAE /* HomeStoryboard.storyboard */; };
+		B26C1B9126FEC74200D1EEAE /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26C1B9026FEC74200D1EEAE /* CustomTabBarController.swift */; };
+		B26C1B9426FECD5600D1EEAE /* MediateStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26C1B9326FECD5500D1EEAE /* MediateStoryboard.storyboard */; };
+		B26C1B9826FED30600D1EEAE /* ListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26C1B9726FED30600D1EEAE /* ListDataSource.swift */; };
+		B26C1BA426FED72000D1EEAE /* ListCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26C1BA326FED72000D1EEAE /* ListCollectionCell.swift */; };
 		B2AF835126EC69DC0039C6B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF835026EC69DC0039C6B2 /* AppDelegate.swift */; };
-		B2AF835326EC69DC0039C6B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF835226EC69DC0039C6B2 /* SceneDelegate.swift */; };
 		B2AF835526EC69DC0039C6B2 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AF835426EC69DC0039C6B2 /* OnboardingViewController.swift */; };
 		B2AF835A26EC69DE0039C6B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2AF835926EC69DE0039C6B2 /* Assets.xcassets */; };
 		B2AF835D26EC69DE0039C6B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2AF835B26EC69DE0039C6B2 /* LaunchScreen.storyboard */; };
 		B2B0C0B326EE469800CBD777 /* UIFont+CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B0C0B226EE469800CBD777 /* UIFont+CustomFonts.swift */; };
 		B2B0C0B726EE46BB00CBD777 /* UIColor+CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B0C0B626EE46BB00CBD777 /* UIColor+CustomColors.swift */; };
+		B2B711A626FCED6900A0DBF0 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B711A526FCED6900A0DBF0 /* MusicViewController.swift */; };
+		B2B711AA26FCF29600A0DBF0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B711A926FCF29600A0DBF0 /* Constants.swift */; };
 		B2FE73D926EC6CAF000713B6 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FE73D826EC6CAF000713B6 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,15 +59,31 @@
 		B24CC03F26F785C600CA0738 /* WelcomeSleepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeSleepViewController.swift; sourceTree = "<group>"; };
 		B254D45E26EF940600C9CB82 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		B254D47726EFA46100C9CB82 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		B26C1B4526FE231F00D1EEAE /* SleepMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepMusicViewController.swift; sourceTree = "<group>"; };
+		B26C1B4826FE24D400D1EEAE /* SleepMusicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepMusicCollectionViewCell.swift; sourceTree = "<group>"; };
+		B26C1B5526FE440A00D1EEAE /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		B26C1B5926FE446800D1EEAE /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		B26C1B5D26FE458800D1EEAE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B26C1B6026FE45E600D1EEAE /* SleepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepViewController.swift; sourceTree = "<group>"; };
+		B26C1B6326FE461600D1EEAE /* MediateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediateViewController.swift; sourceTree = "<group>"; };
+		B26C1B6926FE56B900D1EEAE /* ChooseTopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTopicViewController.swift; sourceTree = "<group>"; };
+		B26C1B6C26FE57E400D1EEAE /* ChooseTopicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseTopicCollectionViewCell.swift; sourceTree = "<group>"; };
+		B26C1B7C26FE5E4600D1EEAE /* PinterestCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestCollectionViewLayout.swift; sourceTree = "<group>"; };
+		B26C1B8226FE7C5D00D1EEAE /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
+		B26C1B9026FEC74200D1EEAE /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		B26C1B9326FECD5500D1EEAE /* MediateStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MediateStoryboard.storyboard; sourceTree = "<group>"; };
+		B26C1B9726FED30600D1EEAE /* ListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataSource.swift; sourceTree = "<group>"; };
+		B26C1BA326FED72000D1EEAE /* ListCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCollectionCell.swift; sourceTree = "<group>"; };
 		B2AF834D26EC69DC0039C6B2 /* SilentMoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilentMoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2AF835026EC69DC0039C6B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B2AF835226EC69DC0039C6B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B2AF835426EC69DC0039C6B2 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		B2AF835926EC69DE0039C6B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2AF835C26EC69DE0039C6B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2AF835E26EC69DE0039C6B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2B0C0B226EE469800CBD777 /* UIFont+CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+CustomFonts.swift"; sourceTree = "<group>"; };
 		B2B0C0B626EE46BB00CBD777 /* UIColor+CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+CustomColors.swift"; sourceTree = "<group>"; };
+		B2B711A526FCED6900A0DBF0 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		B2B711A926FCF29600A0DBF0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B2FE73D826EC6CAF000713B6 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		FE2551E072B3A3323164BF39 /* Pods-SilentMoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SilentMoon.release.xcconfig"; path = "Target Support Files/Pods-SilentMoon/Pods-SilentMoon.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,9 +154,95 @@
 		B254D47626EFA44F00C9CB82 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				B26C1B8526FEA8FD00D1EEAE /* CollectionViewCell */,
 				B254D47726EFA46100C9CB82 /* CustomTextField.swift */,
+				B26C1B9026FEC74200D1EEAE /* CustomTabBarController.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		B26C1B3E26FE222500D1EEAE /* SleepMusic */ = {
+			isa = PBXGroup;
+			children = (
+				B26C1B4526FE231F00D1EEAE /* SleepMusicViewController.swift */,
+			);
+			path = SleepMusic;
+			sourceTree = "<group>";
+		};
+		B26C1B3F26FE222F00D1EEAE /* PlayOption */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PlayOption;
+			sourceTree = "<group>";
+		};
+		B26C1B4026FE223900D1EEAE /* Sleep */ = {
+			isa = PBXGroup;
+			children = (
+				B26C1B6026FE45E600D1EEAE /* SleepViewController.swift */,
+			);
+			path = Sleep;
+			sourceTree = "<group>";
+		};
+		B26C1B4126FE224800D1EEAE /* ChooseTopic */ = {
+			isa = PBXGroup;
+			children = (
+				B26C1B6926FE56B900D1EEAE /* ChooseTopicViewController.swift */,
+				B26C1B6C26FE57E400D1EEAE /* ChooseTopicCollectionViewCell.swift */,
+				B26C1B7C26FE5E4600D1EEAE /* PinterestCollectionViewLayout.swift */,
+			);
+			path = ChooseTopic;
+			sourceTree = "<group>";
+		};
+		B26C1B4226FE225900D1EEAE /* CourseDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CourseDetails;
+			sourceTree = "<group>";
+		};
+		B26C1B4326FE227A00D1EEAE /* MeditateV2 */ = {
+			isa = PBXGroup;
+			children = (
+				B26C1B6326FE461600D1EEAE /* MediateViewController.swift */,
+				B26C1B9326FECD5500D1EEAE /* MediateStoryboard.storyboard */,
+				B26C1B9726FED30600D1EEAE /* ListDataSource.swift */,
+				B26C1BA326FED72000D1EEAE /* ListCollectionCell.swift */,
+			);
+			path = MeditateV2;
+			sourceTree = "<group>";
+		};
+		B26C1B4426FE228C00D1EEAE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B26C1B5D26FE458800D1EEAE /* HomeViewController.swift */,
+				B26C1B8226FE7C5D00D1EEAE /* HomeStoryboard.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B26C1B5426FE3C4100D1EEAE /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				B26C1B5526FE440A00D1EEAE /* TabBarCoordinator.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		B26C1B5826FE445900D1EEAE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B26C1B5926FE446800D1EEAE /* CoordinatorProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		B26C1B8526FEA8FD00D1EEAE /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B26C1B4826FE24D400D1EEAE /* SleepMusicCollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 		B2AF834426EC69DC0039C6B2 = {
@@ -167,9 +285,27 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		B2B711A326FCE33600A0DBF0 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				B2B711A526FCED6900A0DBF0 /* MusicViewController.swift */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		B2B711A826FCF28500A0DBF0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B2B711A926FCF29600A0DBF0 /* Constants.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		B2FE73CA26EC6AD4000713B6 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				B26C1B5826FE445900D1EEAE /* Protocols */,
+				B2B711A826FCF28500A0DBF0 /* Entities */,
 				B2B0C0B126EE467B00CBD777 /* Extensions */,
 				B2FE73D726EC6C83000713B6 /* Application */,
 				B2FE73E626EE3835000713B6 /* Modules */,
@@ -197,7 +333,6 @@
 			isa = PBXGroup;
 			children = (
 				B2AF835026EC69DC0039C6B2 /* AppDelegate.swift */,
-				B2AF835226EC69DC0039C6B2 /* SceneDelegate.swift */,
 				B2FE73D826EC6CAF000713B6 /* AppCoordinator.swift */,
 			);
 			path = Application;
@@ -206,6 +341,15 @@
 		B2FE73E626EE3835000713B6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				B26C1B5426FE3C4100D1EEAE /* TabBar */,
+				B26C1B4426FE228C00D1EEAE /* Home */,
+				B26C1B4326FE227A00D1EEAE /* MeditateV2 */,
+				B26C1B4226FE225900D1EEAE /* CourseDetails */,
+				B26C1B4126FE224800D1EEAE /* ChooseTopic */,
+				B26C1B4026FE223900D1EEAE /* Sleep */,
+				B26C1B3F26FE222F00D1EEAE /* PlayOption */,
+				B26C1B3E26FE222500D1EEAE /* SleepMusic */,
+				B2B711A326FCE33600A0DBF0 /* Music */,
 				B2028F6D26F8D2BF008A3B30 /* Reminders */,
 				B2028F5526F8C809008A3B30 /* Welcome */,
 				B24CC03E26F7855D00CA0738 /* WelcomeSleep */,
@@ -287,8 +431,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B26C1B9426FECD5600D1EEAE /* MediateStoryboard.storyboard in Resources */,
 				B2028F6926F8CF9D008A3B30 /* WelcomeStoryboard.storyboard in Resources */,
 				B2028F7326F8D2F8008A3B30 /* RemindersStoryboard.storyboard in Resources */,
+				B26C1B8326FE7C5D00D1EEAE /* HomeStoryboard.storyboard in Resources */,
 				B2AF835D26EC69DE0039C6B2 /* LaunchScreen.storyboard in Resources */,
 				B2AF835A26EC69DE0039C6B2 /* Assets.xcassets in Resources */,
 				B2028F5326F847BB008A3B30 /* WelcomeSleepStoryboard.storyboard in Resources */,
@@ -382,17 +528,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B26C1B6D26FE57E400D1EEAE /* ChooseTopicCollectionViewCell.swift in Sources */,
 				B2FE73D926EC6CAF000713B6 /* AppCoordinator.swift in Sources */,
+				B26C1B6A26FE56B900D1EEAE /* ChooseTopicViewController.swift in Sources */,
 				B2AF835526EC69DC0039C6B2 /* OnboardingViewController.swift in Sources */,
+				B26C1B4626FE231F00D1EEAE /* SleepMusicViewController.swift in Sources */,
 				B216E6DA26EE3B2000DDA9D5 /* R.generated.swift in Sources */,
 				B2B0C0B726EE46BB00CBD777 /* UIColor+CustomColors.swift in Sources */,
+				B26C1BA426FED72000D1EEAE /* ListCollectionCell.swift in Sources */,
 				B2AF835126EC69DC0039C6B2 /* AppDelegate.swift in Sources */,
 				B24CC03B26F783B000CA0738 /* SignUpViewController.swift in Sources */,
+				B2B711A626FCED6900A0DBF0 /* MusicViewController.swift in Sources */,
+				B26C1B9126FEC74200D1EEAE /* CustomTabBarController.swift in Sources */,
+				B2B711AA26FCF29600A0DBF0 /* Constants.swift in Sources */,
+				B26C1B6126FE45E600D1EEAE /* SleepViewController.swift in Sources */,
 				8B57C6F926F1D9EE000BBB6F /* UIButton+Image.swift in Sources */,
+				B26C1B4926FE24D400D1EEAE /* SleepMusicCollectionViewCell.swift in Sources */,
 				B254D45F26EF940600C9CB82 /* SignInViewController.swift in Sources */,
 				B2B0C0B326EE469800CBD777 /* UIFont+CustomFonts.swift in Sources */,
-				B2AF835326EC69DC0039C6B2 /* SceneDelegate.swift in Sources */,
+				B26C1B5A26FE446800D1EEAE /* CoordinatorProtocol.swift in Sources */,
 				B24CC04026F785C600CA0738 /* WelcomeSleepViewController.swift in Sources */,
+				B26C1B5E26FE458800D1EEAE /* HomeViewController.swift in Sources */,
+				B26C1B7D26FE5E4600D1EEAE /* PinterestCollectionViewLayout.swift in Sources */,
+				B26C1B5626FE440A00D1EEAE /* TabBarCoordinator.swift in Sources */,
+				B26C1B9826FED30600D1EEAE /* ListDataSource.swift in Sources */,
+				B26C1B6426FE461600D1EEAE /* MediateViewController.swift in Sources */,
 				B254D47826EFA46100C9CB82 /* CustomTextField.swift in Sources */,
 				B2028F5726F8C820008A3B30 /* WelcomeViewController.swift in Sources */,
 				B2028F6F26F8D2DE008A3B30 /* RemindersViewController.swift in Sources */,
@@ -464,7 +624,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -519,7 +679,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -538,6 +698,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S9V323B2TN;
 				INFOPLIST_FILE = SilentMoon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,6 +719,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S9V323B2TN;
 				INFOPLIST_FILE = SilentMoon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
